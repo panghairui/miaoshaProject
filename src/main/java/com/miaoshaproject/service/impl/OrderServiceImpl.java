@@ -38,7 +38,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired(required = false)
     private SequenceDOMapper sequenceDOMapper;
-
+    
     @Override
     @Transactional
     public OrderModel createOrder(Integer userId, Integer itemId, Integer amount) throws BusinessException {
